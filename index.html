@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-
+<!-- Normalize code first, then style -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
   <!-- Responsiveness -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -18,10 +19,10 @@
 <link href="styles.css" rel="stylesheet">
 
   <title>DES 157A Portal Page</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
 </head>
 
 <body>
+  
   <header class="header">
     <h1 class="course-title">
       DES 157A – Interactive Media II – Winter 2026
@@ -36,7 +37,7 @@
     <!-- Image / Hero Section -->
     <section class="content">
       <div class="image-card">
-        <img src="images/grass.jpg" alt="lflower">
+        <img src="images/grass.jpg" alt="landscape">
       </div>
     </section>
 
@@ -45,15 +46,18 @@
 
   <div class="name-pill">Vyvyan Tran</div>
   <div class="assignments-container">
+    <div class="assignments-groupCard">
     <h2>Research</h2>
     <section class="assignment-card">
       <ul>
         <li>Learning Journal</li>
-        <li>Experiment 1</li>
+        <li><a href="exp/exp1.html">Experiment 1</a></li> 
         <li>Experiment 2</li>
       </ul>
     </section>
+    </div>
 
+    <div class="assignments-groupCard">
     <h2>MadLib</h2>
     <section class="assignment-card">
       <ul>
@@ -63,7 +67,10 @@
         <li>Improvements</li>
       </ul>
     </section>
+    </div>
 
+
+    <div class="assignments-groupCard">
     <h2>Every Picture</h2>
     <section class="assignment-card">
       <ul>
@@ -74,8 +81,10 @@
         <li>Improvements</li>
       </ul>
     </section>
+    </div>
 
-     <h2>Game On</h2>
+    <div class="assignments-groupCard">
+    <h2>Game On</h2>
     <section class="assignment-card">
       <ul>
         <li>Design Version 1</li>
@@ -83,6 +92,7 @@
         <li>Final Game On Project</li>
       </ul>
     </section>
+    </div>
 
   </div>
 </aside>

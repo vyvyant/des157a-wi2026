@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Experimentation</title>
+</head>
+<body>
+    <h1>Experiment 1</h1>
+    <h2>In this program, it capitalized every other letter in a string.</h2>
+
+<!-- // prompts user to type a word and takes that into a variable -->
+    <script>
+    var anyPrompt = prompt("Enter a word:", "").toLowerCase();
+    var final = "";
+    
+// loop goes through each character in the string
+    for (i=0; i<anyPrompt.length; i++){
+
+        //selection checks if the index placement of the letter is even or odd in the word
+        if (i%2==0){
+            final += anyPrompt[i].toUpperCase();
+        } else{
+            final += anyPrompt[i];
+        }
+    }
+
+//prints the final string output with
+    console.log(final);
+
+    </script>
+
+<!-- one sequence, one selection and one loop -->
+</body>
+</html>

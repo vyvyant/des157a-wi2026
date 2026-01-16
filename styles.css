@@ -1,12 +1,18 @@
 body {
 font-family: 'Nunito';
-font-weight: 200 800;
+font-weight: 400;
 font-style: normal;
 font-size: 16px; 
 color: #272123;
-  
+background-color: #f9f9f0;
+margin: 0;
 }
 
+.header {
+
+padding-top: 48px;
+
+}
 
 
 .sidebar ul {
@@ -26,31 +32,34 @@ color: #272123;
   box-shadow: 0 6px 20px rgba(0,0,0,0.08);
     border: 2px solid rgba(190, 191, 133, 0.7);
   max-width: 1200px;
-  margin: 48px auto 48px;
+  margin: 0 auto 48px;
   display: flex;
   justify-content: space-between;
-  text-align: center;
-  gap: 5px;
   padding: 16px 32px;
  stroke: #fff1a1;
  position: relative;
  z-index: 3;
- border-radius: 1.25 rem;
- 
-  
+ border-radius: 20px;
+}
+
+.course-title h1 {
+  font-family: 'Tangerine';
+  font-weight: 800;
+  font-size: 48px; 
+  color: #271313c7;
+   text-align: center;
+  margin: 0;
 }
 
 
-.header {
-  text-align: center;
-  padding: 16px;
-}
 
 .main {
   display: grid;
   grid-template-columns: 1fr;
   gap: 24px;
   padding: 16px;
+
+  padding-top: 80px;
 }
 
 /* Image Section */
@@ -66,18 +75,19 @@ color: #272123;
   gap: 20px;
   z-index: 2;
   position: relative;
-  margin-top: -150px;
+  margin-top: 0;
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;
   box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-  width: 500px; 
-  background: linear-gradient(270deg, #fff9c4, #ffffff, #d4f5d4); 
+  width: 500px;
+  stroke: #fff1a1; 
+  /* background: linear-gradient(270deg, #fff9c4, #ffffff, #d4f5d4); 
   background-size: 600% 600%; 
-  animation: gradientShift 60s ease infinite; 
+  animation: gradientShift 60s ease infinite;  */
 }
 
-
+/* 
 @keyframes gradientShift {
   0% {
     background-position: 0% 50%;
@@ -88,7 +98,7 @@ color: #272123;
   100% {
     background-position: 0% 50%;
   }
-}
+} */
 
 .image-card img {
   width: 500px; /* match image max-width */
@@ -99,22 +109,23 @@ color: #272123;
 }
 
 .name-pill {
-background-color: #f7f8e9;
+  background-color: #f7f8e9;
   border-radius: 500px;
   box-shadow: 0 6px 20px rgba(0,0,0,0.2);
   padding: 8px 80px;
   border: 2px solid rgba(190, 191, 133, 0.7);
 
-font-family: 'Tangerine';
-font-weight: 800;
-font-size: 48px; 
-color: #271313c7;
+  font-family: 'Tangerine';
+  font-weight: 800;
+  font-size: 48px; 
+  color: #271313c7;
 
   position: relative;
   margin: -245px auto 24px;
   width: fit-content;
   z-index: 3;
-  left: 20px;
+  left: 30px;
+
 }
 
 /* Assignments */
@@ -132,15 +143,12 @@ main section h2 {
   margin-bottom: 8px; 
 }
 
-.assignment-card {
-  padding: 16px;
-  border-radius: 16px;
-}
+
 
 .hero-banner {
   width: 100%;
   height: 400px;
-  margin: -200px auto 48px;
+  margin: 0 auto 48px;
   border-radius: 0;
   overflow: hidden;
   background-image: url('images/flower.jpg');
@@ -149,6 +157,10 @@ main section h2 {
   background-repeat: no-repeat;
   position: relative;
   z-index: 1;
+
+  stroke:#EFEBD6;
+margin-bottom:48px;
+margin-top: -300px;
   
 }
 
@@ -163,18 +175,58 @@ main section h2 {
 
 .assignments-container {
   background-color: #f7f8e9;
-  padding: 16px 32px;
+  padding: 24px;
   border-radius: 28px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); */
+
   gap: 20px;
   z-index: 2;
-  position: relative;
-  margin-top: 0px;
+  /* position: relative; */
+  margin-top: 64px;
   border: 2px solid #FFFADF;
-  left: 20px;
+  /* left: 80px; */
+  max-height: 750px;
+  max-width: 1200px;
+  /* flex-wrap: wrap; */
+  margin-left: 48px; 
 
+}
+
+
+
+.assignment-card {
+  flex: 1;
+  /* min-height: 300px;
+  max-height: 750px;
+  max-width: 1200px; */
+  background-color: #ffffff;
+  padding: 16px;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.assignment-card ul {
+  list-style-type: none;
+  padding: 0;
+ margin: 0;
+}
+
+.assignment-card li {
+  font-size: 14px;
+line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+
+.assignments-groupCard {
+display: flex;
+flex-direction: column;
+min-height: 0;
 }
 
 /* customizing the boxes */
@@ -185,14 +237,6 @@ main section h2 {
   border-radius: 24px;
   background-color: #ffffff;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.09);
-}
-
-.assignment-card {
-  background-color: #ffffff;;
-  padding: 24px;
-  border-radius: 24px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .assignment-card:hover {
@@ -213,6 +257,7 @@ main section h2 {
   align-items: center;
   gap: 5px;
   padding: 16px 32px;
+  stroke: #EFEBD6; 
 }
 
 
@@ -248,6 +293,7 @@ main section h2 {
     flex-direction: column;
     text-align: center;
     gap: 12px;
+  
     }
 }
 
