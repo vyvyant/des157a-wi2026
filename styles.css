@@ -8,6 +8,21 @@ background-color: #f9f9f0;
 margin: 0;
 }
 
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: #272123;
+}
+
+a:hover {
+  background-color: rgb(255, 242, 168); 
+  color: rgb(40, 30, 23);            
+}
+
+
 .header {
 
 padding-top: 48px;
