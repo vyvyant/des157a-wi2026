@@ -24,8 +24,10 @@
     <p>Enter a color name (example: red, blue, green).</p>
 
     <script>
+        // this program changes the hair color of Bob based on user input
         function getUserColor() {
             return prompt("What color should Bob's hair be?");
+            
         }
 
         function validateColor(color, allowedColors) {
@@ -40,14 +42,20 @@
         function startHairChange() {
             var hairBlock = document.getElementById("hair-block");
             var allowedColors = ["red", "blue", "green", "purple", "brown", "black", "pink", "yellow", "orange", "gray", "white", "cyan", "magenta", "lime", "teal", "navy", "maroon", "olive", "silver", "gold"];
-
+            // array
             var userColor = getUserColor();
+            // uses the function, getUserColor and stores it in variable userColor
 
+
+            // !if user cancels or left prompt, then alert occurs and function ends
             if (!userColor) {
                 alert("Please enter a color.");
                 return;
             }
 
+            //takes the userColor string that user typed into the prompt, converts it to all lowercase since case senitive
+            // validateColor then calls the function to loop through the array to see if the converted lowercase color, matches any allowed colors
+            //returns true (color found) or false (color not found)
             if (validateColor(userColor.toLowerCase(), allowedColors)) {
                 hairBlock.style.backgroundColor = userColor;
             } else {

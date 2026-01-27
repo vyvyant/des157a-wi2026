@@ -89,14 +89,19 @@ padding-top: 48px;
   box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
   gap: 20px;
   z-index: 2;
+
   position: relative;
+  bottom: 70px;
+
+
   margin-top: 0;
   max-width: 500px;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: 150px;
   box-shadow: 0 6px 20px rgba(0,0,0,0.08);
   width: 500px;
   stroke: #fff1a1; 
+
   /* background: linear-gradient(270deg, #fff9c4, #ffffff, #d4f5d4); 
   background-size: 600% 600%; 
   animation: gradientShift 60s ease infinite;  */
@@ -140,6 +145,8 @@ padding-top: 48px;
   width: fit-content;
   z-index: 3;
   left: 30px;
+
+  margin-right: -50px;
 
 }
 
@@ -195,19 +202,22 @@ margin-top: -300px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  /* grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); */
+
 
   gap: 20px;
   z-index: 2;
-  /* position: relative; */
+
   margin-top: 64px;
   border: 2px solid #FFFADF;
-  /* left: 80px; */
   max-height: 750px;
-  max-width: 1200px;
-  /* flex-wrap: wrap; */
-  margin-left: 48px; 
+ 
 
+  left: 150px;
+  position: relative;
+
+
+  width: auto;      
+  max-width: none;  
 }
 
 
