@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Experimentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Experiment 2</h1>
+    <h2>Change Bob's Hair Color</h2>
+
+    <div class="bobBody">
+        <div class="bobHead">
+            <div id="hair-block" class="bobHair"></div>
+            <div class="bobFace">
+                <img src="../images/face.png" alt="A roblox face">
+            </div>
+        </div>
+    </div>
+
+    <button onclick="startHairChange()">Change Hair Color</button>
+    <p>Enter a color name (example: red, blue, green).</p>
+
+    <script>
+        function getUserColor() {
+            return prompt("What color should Bob's hair be?");
+        }
+
+        function validateColor(color, allowedColors) {
+            for (let i = 0; i < allowedColors.length; i++) {
+                if (color === allowedColors[i]) {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        function startHairChange() {
+            var hairBlock = document.getElementById("hair-block");
+            var allowedColors = ["red", "blue", "green", "purple", "brown", "black", "pink", "yellow", "orange", "gray", "white", "cyan", "magenta", "lime", "teal", "navy", "maroon", "olive", "silver", "gold"];
+
+            var userColor = getUserColor();
+
+            if (!userColor) {
+                alert("Please enter a color.");
+                return;
+            }
+
+            if (validateColor(userColor.toLowerCase(), allowedColors)) {
+                hairBlock.style.backgroundColor = userColor;
+            } else {
+                alert("That color isn't in the list. Try red, blue, green, purple, brown, black, or pink.");
+            }
+        }
+    </script>
+</body>
+</html>
