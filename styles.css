@@ -102,29 +102,16 @@ padding-top: 48px;
   width: 500px;
   stroke: #fff1a1; 
 
-  /* background: linear-gradient(270deg, #fff9c4, #ffffff, #d4f5d4); 
-  background-size: 600% 600%; 
-  animation: gradientShift 60s ease infinite;  */
+
 }
 
-/* 
-@keyframes gradientShift {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-} */
+
 
 .image-card img {
   width: 500px; /* match image max-width */
   max-width: 500px;
   border-radius: 10px;
-  height: 600px;
+  height: 525px;
   object-fit: cover;
 }
 
@@ -145,7 +132,7 @@ padding-top: 48px;
   width: fit-content;
   z-index: 3;
   left: 30px;
-
+  top: 60px;
   margin-right: -50px;
 
 }
@@ -283,6 +270,8 @@ min-height: 0;
   gap: 5px;
   padding: 16px 32px;
   stroke: #EFEBD6; 
+  position: relative;
+  bottom: 30px; 
 }
 
 
