@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+
+    <script src="script.js" defer></script> 
+
+    <!-- google fonts, fredoka main heading -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+
+    <title>MadLibs: Cooking Competition</title>
+
+
+</head>
+<body>
+    
+    <header>
+        <h1> MadLibs: Cooking Competition</h1>
+    </header>
+    <main>
+        
+        <img src="images/Knife.png" alt="tomato n brocolli"  height="200" class="decor-vector-2">
+
+        <img src="images/Vector.png" alt="tomato n brocolli"  height="100" class="decor-vector">
+
+        <section class="cooking-story">
+
+              <img src="images/Cutting-Board.png" alt="cutting board" width="1000" height="1000" class="board">
+
+             <div class="story-text">
+                <p>
+                    <span id="name1Out">(Name1)</span> and <span id="name2Out">(Name2)</span> entered a cooking contest.
+                    The contest was to see who can cook the best <span id="pluralFoodOut">(plural food)</span>.
+                    Both of them were given random ingredients.
+                    <span id="name1Out2">(Name1)</span> <span id="verbOut">(verb)</span> to the closest stove and got a pot to make
+                    <span id="pluralFoodOut2">(plural food)</span>. <span id="adjective1Out">(adjective)</span> and
+                    <span id="adjective2Out">(adjective)</span>, <span id="name2Out2">(Name2)</span>
+                    <span id="adverbOut">(adverb)</span> to the oven and got started on making the dish.
+                </p>
+
+                <p>
+                    <span id="name1Out3">(Name1)</span> added <span id="ingredient1Out">(ingredient)</span>,
+                    <span id="ingredient2Out">(ingredient)</span>, and a pinch of <span id="nounOut">(noun)</span>,
+                    carefully stirring the pot while tasting the mixture. While <span id="name2Out3">(Name2)</span>
+                    accidentally <span id="verbPast1Out">(verb, past tense)</span> the oven door and shouted
+                    <span id="exclamationOut">(exclamation)</span>, causing everyone nearby to turn and stare.
+                </p>
+
+                <p>
+                    As the clock ticked down, the kitchen became <span id="adjective3Out">(adjective)</span> and
+                    <span id="adjective4Out">(adjective)</span>. Pots were clanging, timers were beeping, and both
+                    contestants were <span id="verbIngOut">(verb + ing)</span> as fast as they could.
+                </p>
+
+                <p>
+                    After an hour and a half — time was up!
+                    <span id="judgeAdjectiveOut">(adjective)</span> <span id="judgeNameOut">(Judge Name)</span> was the judge, and
+                    <span id="adverb2Out">(adverb)</span> walked up to the plates.
+                    <span id="judgeNameOut2">(Judge Name)</span> tried <span id="name1Out4">(Name1)</span>’s dish,
+                    <span id="adjective5Out">(adjective)</span> &amp; <span id="adjective6Out">(adjective)</span>,
+                    <span id="judgeNameOut3">(Judge Name)</span> smiled in delight. Then, they tasted
+                    <span id="name2Out4">(Name2)</span>’s dish and <span id="verbPast2Out">(verb, past tense)</span> in surprise.
+                </p>
+
+                <p>
+                    In the end, the winner was <span id="winnerOut">(Name1 or Name2)</span>, and the kitchen was filled with
+                    <span id="pluralNounOut">(plural noun)</span>, cheering, and the smell of
+                    <span id="finalAdjectiveOut">(adjective)</span> food.
+                </p>
+            </div>
+        </section>
+        <section class="madlibs-inputs">
+            <!-- <img src="images/Guest-Reciept.png" alt="guest receipt" class="receipt-bg" /> -->
+            <form id="madlibs-form">
+                <div class="form-field">
+                <label for="name1">Name 1:</label>
+                <input type="text" id="name1" name="name1" required>
+                </div>
+                 <div class="form-field">
+                <label for="name2">Name 2:</label>
+                <input type="text" id="name2" name="name2" required>
+                </div>
+                <div class="form-field">
+                <label for="plural-food">Plural Food:</label>
+                <input type="text" id="plural-food" name="plural-food" required>
+                </div>
+                <div class="form-field">
+                <label for="verb">Verb:</label>
+                <input type="text" id="verb" name="verb" required>
+                </div>
+                <div class="form-field">
+                <label for="adjective1">Adjective 1:</label>
+                <input type="text" id="adjective1" name="adjective1" required>
+                </div>
+                <div class="form-field">
+                <label for="adjective2">Adjective 2:</label>
+                <input type="text" id="adjective2" name="adjective2" required>
+                </div>
+                <div class="form-field">
+                <label for="adverb">Adverb:</label>
+                <input type="text" id="adverb" name="adverb" required>
+                </div>
+                <div class="form-field">
+                <label for="ingredient1">Ingredient 1:</label>
+                <input type="text" id="ingredient1" name="ingredient1" required>
+                </div>
+
+                <div class="form-field">
+                <label for="ingredient2">Ingredient 2:</label>
+                <input type="text" id="ingredient2" name="ingredient2" required>
+                </div>
+
+                <div class="form-field">
+                <label for ="noun">Noun:</label>
+                <input type="text" id="noun" name="noun" required>
+                </div>
+                <div class="form-field">
+                <label for ="verb-past-tense">Verb (Past Tense):</label>
+                <input type="text" id="verb-past-tense" name="verb-past-tense" required>
+                </div>
+
+                <div class="form-field">
+                 <label for ="exclamation">Exclamation:</label>
+                <input type="text" id="exclamation" name="exclamation" required>
+                </div>
+
+                <!-- third paragraph -->
+                <div class="form-field">
+                <label for ="adjective3">Adjective 3:</label>
+                <input type="text" id="adjective3" name="adjective3" required>
+                </div>
+
+                <div class="form-field">
+                <label for ="judgeName">Judge Name:</label>
+                <input type="text" id="judgeName" name="judgeName" required>
+                </div>
+
+                <div class="form-field">
+                <label for="adverb2">Adverb 2:</label>
+                <input type="text" id="adverb2" name="adverb2" required>
+                </div>
+
+                <div class="form-field">
+                <label for="adjective4">Adjective 4:</label>
+                <input type="text" id="adjective4" name="adjective4" required>
+                </div>
+
+                <div class="form-field">
+                <label for="adjective5">Adjective 5:</label>
+                <input type="text" id="adjective5" name="adjective5" required>
+                </div>
+
+                <div class="form-field">
+                <label for="verb2">Verb (Past Tense):</label>
+                <input type="text" id="verb2" name="verb2" required>
+                </div>
+                <!-- last paragraph -->
+                <div class="form-field">
+                 <label for="Name1orName2">Name 1 or Name 2: </label>
+                <input type="text" id="Name1orName2" name="Name1orName2" required>
+                </div>
+
+                <div class="form-field">
+                <label for="plural-noun">Plural Noun:</label>
+                <input type="text" id="plural-noun" name="plural-noun" required>
+                </div>
+
+                <input type="submit" value="Done">
+
+            </form>
+        </section>
+
+
+
+    </main>
+
+
+</body>
+</html>

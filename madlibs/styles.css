@@ -1,0 +1,17 @@
+html, body {
+    max-width: 1200px; 
+    max-height: 750px; 
+    overflow: hidden; /* Prevents any scrollbars */
+    width: 100%;      
+    height: 100vh;    
+}
+
+/* --- For Content --- */
+
+.content-wrapper {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    max-height: 750px;
+   
+}

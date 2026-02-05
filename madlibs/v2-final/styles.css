@@ -1,0 +1,209 @@
+
+
+body{
+    background-color: beige;
+}
+  
+h1 {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 675;
+    font-size: 72px;
+    color: rgb(53, 86, 176);
+    margin-left: 80px;
+    align-items: start;
+    text-align: start;
+
+}
+
+p {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #271313c7;
+    line-height: 1.6;
+}
+main {
+  max-width: 1200px;
+  max-height: 750px;
+  margin: 0 auto;
+  padding: 24px 24px;
+  display: grid;
+  grid-template-columns: 3.5fr 1fr;
+  gap: 48px;
+  align-items: start;
+
+  /* background-image: url("images/Comp\ \(2\).png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+*/
+}
+
+
+.cooking-story {
+  /* background-color: antiquewhite;  */
+  /* background-image: url("images/Cutting\ Board.png");
+  background-size: 100% auto;
+background-position: left top;
+background-repeat: no-repeat;
+    align-self: start; */
+  position: relative;
+  overflow: hidden;
+
+  width: 115%;
+  margin-left: -25%;
+
+  min-height: 520px;
+  border-radius: 24px;
+
+  /* display: flex; */
+  /* flex-direction: column; */
+}
+
+
+.board {
+ width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+ .madlibs-inputs {
+  background-color: #edf8ff; 
+  border: 1px solid #daeffb;
+ padding: 24px;
+  border-radius: 24px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  align-self: start;
+  
+}
+/* i like the styling when there isnt any madlibs-input changes */
+/* 
+.madlibs-inputs {
+  background-color: #f5efff;
+  padding: 32px;
+  border-radius: 24px;
+  background-image: url("images/Guest-Reciept.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.madlibs-inputs::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("images/Guest-Reciept.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 1;
+  
+
+} */
+
+/* receipt bg isnt working the way I wantTTTHiutheishraaoisdn */
+/* .receipt-bg{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;      
+  object-position: top center;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 1;                
+} */
+
+.madlibs-inputs form {
+  position: relative;
+  z-index: 1;
+}
+
+
+.story-text{
+  position: absolute;
+  top: 54px;
+  left: 72px;
+  right: 72px;
+  bottom: 54px;
+
+  overflow: auto;        
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+
+.content-wrapper {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    max-height: 750px;
+   
+}
+
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 550;
+  letter-spacing: 0.02em;
+  color: #452d16;
+  padding: 5px;
+}
+
+input[type="text"] {
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #9b87ff;
+  box-shadow: 0 0 0 3px rgba(155, 135, 255, 0.25);
+}
+
+input[type="submit"] {
+  grid-column: 1 / -1;
+  margin-top: 16px;
+  padding: 12px;
+  border-radius: 999px;
+  border: none;
+  background-color: rgb(49, 72, 135);
+  color: white;
+  cursor: pointer;
+}
+
+input::placeholder {
+  font-family: 'Fredoka', sans-serif;
+  font-style: italic;
+  color: rgba(39, 19, 19, 0.5);
+}
+
+
+.decor-vector {
+  position: absolute;
+  top: 750px;      
+  left: 60px;      
+  width: 200px;    
+  pointer-events: none; 
+}
+
+.decor-vector-2 {
+  position: absolute;
+  top: 700px;      
+  left: 600px;      
+  width: 200px;    
+  pointer-events: none; 
+}

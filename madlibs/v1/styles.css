@@ -2,14 +2,18 @@
 
 
   
-
+h1 {
+    margin-left: 250px;
+    align-items: start;
+    text-align: start;
+}
 
 main {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 48px;
+  padding: 32px 48px;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 3.5fr 1fr;
   gap: 48px;
   align-items: start;
 
@@ -22,17 +26,39 @@ main {
 
 
 .cooking-story {
-  background-color: antiquewhite; 
-  padding: 40px;
+  /* background-color: antiquewhite;  */
+  /* background-image: url("images/Cutting\ Board.png");
+  background-size: 100% auto;
+background-position: left top;
+background-repeat: no-repeat;
+    align-self: start; */
+position: relative; 
+
+
+  min-height: 520px;
+  padding: 8px;
   border-radius: 24px;
+
+  display: flex;
+  flex-direction: column;
 }
 
+
+.board {
+  width: 100%;
+  height: auto;
+  /* display: block; */
+}
 
 
 .madlib-inputs {
   background-color: #f5efff;
   padding: 32px;
   border-radius: 24px;
+  background-image: url("images/Guest\ Reciept\ \(1\).png");
+    background-size: cover;
+    background-position: center;
+
 }
 
 
