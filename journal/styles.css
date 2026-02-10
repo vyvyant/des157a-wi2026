@@ -1,4 +1,15 @@
 /* Base reset */
+
+a:link {
+  color: rgb(27, 72, 18);
+  text-decoration: none;
+}
+
+
+a:visited {
+  color: rgb(27, 72, 18);
+}
+
 * {
   box-sizing: border-box;
 }
