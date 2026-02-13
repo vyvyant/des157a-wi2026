@@ -3,6 +3,7 @@
 
   const form = document.querySelector("#madlibs-form");
   const story = document.querySelector(".story-text");
+  story.classList.remove("show"); // makes sure it is hidden when the page loads
 
   form.addEventListener("submit", function (event) {
     event.preventDefault();
@@ -93,7 +94,7 @@
     setText("#winnerOut", data.winner);
     setText("#pluralNounOut", data.pluralNoun);
 
-  
+    story.hidden = false;
     story.classList.add("show");
 
 

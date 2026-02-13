@@ -130,11 +130,14 @@ background-repeat: no-repeat;
   bottom: 54px;
 
   overflow: auto;  
-
+  display: none;    
+  
   
 }
 
-
+.story-text.show {
+  display: block;
+}
 
 form {
   display: grid;
