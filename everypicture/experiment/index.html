@@ -1,75 +1,26 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Every Picture — Experiment</title>
+  <title>Every Picture — Experiment (Prototype)</title>
   <link rel="stylesheet" href="styles.css" />
   <script src="script.js" defer></script>
 </head>
 
 <body>
-  <header class="top">
-    <div class="wrap">
-      <h1>Every Picture Experiment</h1>
-      <p class="sub">
-        Things That help me feel less overwhelmed.
-      </p>
-    </div>
-  </header>
+  <main class="stage">
+    <h1>Experiment Prototype</h1>
+    <p class="sub">Things That help me feel less overwhelmed.</p>
 
-  <main class="wrap">
-    <section class="gallery" aria-label="Image experiment gallery">
-
-      
-      <figure class="card drift-left reveal" tabindex="0">
-        <img src="images/image1.jpg" alt="window natural lighting" loading="lazy" />
-        <figcaption class="overlay">
-          <p class="overlay-title">Natural lighting</p>
-          <p class="overlay-body">Whenever I need a boost of energy while studying, I always look to sit in front or next to a window with natural lighting. Even at home, I always prefer natural lighting over white lights.</p>
-        </figcaption>
-      </figure>
-
-     
-      <figure class="card drift-right reveal" tabindex="0">
-        <img src="images/image2.jpg" alt="matcha drink" loading="lazy" />
-        <figcaption class="overlay">
-          <p class="overlay-title">A Sweet Drink.</p>
-          <p class="overlay-body">Treating myself with a drink, or going to a cafe to study always adds a different change of pace to my routine. I always get a boba or a latte on the weekends whenever I'm out with my friends, family, or anyone I care about.</p>
-        </figcaption>
-      </figure>
-
-      <figure class="card drift-left-2 reveal" tabindex="0">
-        <img src="images/image3.jpg" alt="schedule n journal" loading="lazy" />
-        <figcaption class="overlay">
-          <p class="overlay-title">Agenda.</p>
-          <p class="overlay-body">Having a physical or digital agenda really helps me jot down what I need to do for the day. It helps me stay organized, reminds me to do any tasks I forget to do, and focus on what's important. Having a some type of structure helps me be less overwhelmed.</p>
-        </figcaption>
-      </figure>
-
-      <figure class="card drift-right-2 reveal" tabindex="0">
-        <img src="images/image4.png" alt="Music & Cooking Vlogs" loading="lazy" />
-        <figcaption class="overlay">
-          <p class="overlay-title">Music & Cooking Vlogs</p>
-          <p class="overlay-body">Watching any type of cooking vlog, whether its in a documnetary form, vlog, or travel show- its always intesrting and helps me relax and focus on something thats not academic or work related. I love listeniing to decompress during inbetween walks to class to decompress, or just to have fun & vibe.</p>
-        </figcaption>
-      </figure>
-
-      <figure class="card drift-center reveal" tabindex="0">
-        <img src="images/image5.png" alt="flowers" loading="lazy" />
-        <figcaption class="overlay">
-          <p class="overlay-title">Flowers</p>
-          <p class="overlay-body">I always find myself to stop and look at flowers whenever I pass by any. I never usually get any for myself because of cost & the fact that they eventually wilt, but I always take a second to admire and appreciate their beauty. It reminds me to be present in the moment and notice the small things in life.</p>
-        </figcaption>
-      </figure>
-
-    </section>
+    <figure class="card" id="card" tabindex="0">
+      <img src="images/image1.jpg" alt="window natural lighting" id="img" />
+      <figcaption class="overlay" id="overlay">
+        <p class="title">Natural lighting</p>
+        <p class="body">Whenever I need a boost of energy while studying, I always look to sit
+            in front or next to a window with natural lighting.</p>
+      </figcaption>
+    </figure>
   </main>
-
-  <footer class="footer">
-    <div class="wrap">
-      <p>Every Picture — Experiment</p>
-    </div>
-  </footer>
 </body>
 </html>
