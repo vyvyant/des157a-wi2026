@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Every Picture — Collage Hotspots</title>
+
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header class="wrap top">
+    <h1>Things That Help Me Feel Less Overwhelmed</h1>
+    <p class="sub">Hover different areas of the collage to reveal a short reflection.</p>
+  </header>
+
+  <main class="wrap">
+    <!--  collage (left) + info panel (right) -->
+    <section class="stage">
+
+      <!-- where the collage is going to be -->
+      <div id="container">
+        <img
+          src="images/Collage.png"
+          alt="A collage of five calming moments"
+          class="start"
+          width="1100"
+          height="650"
+        />
+
+        <!-- Hotspots -->
+        <div class="hotspot" id="candle" ></div>
+        <div class="hotspot" id="flowers" ></div>
+        <div class="hotspot" id="headphones"></div>
+        <div class="hotspot" id="matcha"></div>
+        <div class="hotspot" id="planner"></div>
+      </div>
+
+      <!-- info for hover state -->
+      <aside class="info">
+        <h2 class="info-title">Hover a hotspot</h2>
+        <p class="info-body">
+          Move your mouse over different parts of the collage to see why each moment helps me feel calmer.
+        </p>
+        <p class="info-note">
+          
+        </p>
+      </aside>
+
+    </section>
+  </main>
+
+  <footer class="wrap footer">
+    <p>Every Picture — Studio 2</p>
+  </footer>
+</body>
+</html>
