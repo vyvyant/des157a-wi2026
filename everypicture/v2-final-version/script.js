@@ -1,6 +1,8 @@
 (function () {
   "use strict";
 
+//   console.log("reading js");
+
   const container = document.querySelector("#container");
   const hotSpots = document.querySelectorAll("#container .hotspot");
   const theImg = document.querySelector("#container img");
