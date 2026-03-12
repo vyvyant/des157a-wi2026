@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of Pig</title>
+
+ <!-- Google fonts -->   
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wdth,wght@98.6,300..700&family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">   
+<!-- Google fonts -->
+
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script> 
+
+
+</head>
+<body>
+    <div class="title-row">
+        <h1>GAME OF PIG</h1>
+        <img src="images/Dice.png" alt="dice icon" class="title-dice">
+    </div>
+
+    <div class="game-container">
+
+        <div class="player player1 active" id="player1-panel">
+            <div class="name-row">
+             <button class="edit-name" id="edit-player1">✏️</button>
+             <h2 id="player1-name">Player 1</h2>
+            </div>
+
+            <div class="player-content">
+                <div class="dice">
+                    <img id="player1-die" src="images/die1.png" alt="Player 1 die">
+                </div>
+
+                <div class="score-box">
+                    <p class="score-label">TOTAL</p>
+                    <p id="player1-total" class="score-number">0</p>
+                    <p class="turn-label">TURN</p>
+                    <p id="player1-turn" class="turn-number">0</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+        <button type="button" id="set-score">Set Score</button>
+        <button type="button" id="roll-dice">Roll Dice</button>
+        <button type="button" id="hold-turn">Hold Turn</button>
+        <button type="button" id="new-game">New Game</button>
+        </div>
+
+        <div class="player player2" id="player2-panel">
+            <div class="name-row">
+            <button class="edit-name" id="edit-player2">✏️</button>
+         <h2 id="player2-name">Player 2</h2>
+        </div>
+
+            <div class="player-content">
+                <div class="dice">
+                    <img id="player2-die" src="images/die1.png" alt="Player 2 die">
+                </div>
+
+                <div class="score-box">
+                    <p class="score-label">TOTAL</p>
+                    <p id="player2-total" class="score-number">0</p>
+                    <p class="turn-label">TURN</p>
+                    <p id="player2-turn" class="turn-number">0</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="console">
+        <p id="console-message">Console Message: Player 1 starts. Roll the die.</p>
+    </div>
+
+    <footer><a href="sources.html">Sources</a></footer>
+
+    <audio id="roll-sound">
+    <source src="audio/light_sound.mp3" type="audio/mpeg">
+
+    </audio>
+
+    <audio id="newgame-sound">
+        <source src="audio/dragon-studio-pop-402324.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="hold-sound">
+        <source src="audio/matthewvakaliuk73627-mouse-click-290204.mp3" type="audio/mpeg">
+    </audio>    
+</body>
+</html>
